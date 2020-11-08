@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  color: #333;
+}
+
+.container {
+  padding: 50px 10%;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.h-md {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 30px;
+}
+
+.h-sm {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.list {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.list li input {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.list li p {
+  margin-left: 20px;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.description img {
+  margin-top: 4px;
+}
+
+.description p {
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 12px;
+  width: 592px;
+}
+
+.recipe-img {
+  width: 100%;
+  height: 450px;
+  background-image: url("../img/photo1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.info-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+}
+
+.instructions {
+  margin-bottom: 60px;
+}
+
+.instruction {
+  width: 100%;
+  margin-bottom: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 36px calc(100% - 36px);
+      grid-template-columns: 36px calc(100% - 36px);
+  gap: 15px;
+}
+
+.instruction .step {
+  width: 36px;
+  height: 36px;
+  padding-bottom: 4px;
+  border-radius: 6px;
+  background-color: #f2994a;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.instruction .text {
+  line-height: 24px;
+}
+
+.source {
+  color: #bdbdbd;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.numbers-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.numbers {
+  width: 216px;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 60px 40px;
+}
+
+.numbers-item {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.numbers-item:first-child i,
+.numbers-item:first-child p {
+  color: #f2994a;
+}
+
+.numbers-item:last-child {
+  margin-bottom: 0;
+}
+
+.numbers-item i {
+  font-size: 2.2rem;
+  margin-right: 15px;
+}
+
+.numbers-item h3 {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #bdbdbd;
+  margin-bottom: 6px;
+}
+
+.numbers-item p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+footer {
+  padding: 100px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  color: #a9a9a9;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+footer p a {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #a9a9a9;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px 8px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .list li {
+    font-size: 14px;
+  }
+  .h-md {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .description p {
+    font-size: 12px;
+  }
+  .recipe-img {
+    height: 200px;
+    margin-bottom: 24px;
+  }
+  .info-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .numbers-col {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .numbers {
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "yields yields yields" "prep-time cook-time total-time";
+  }
+  .numbers-item {
+    margin-bottom: 24px;
+  }
+  .numbers-item i {
+    font-size: 1.5rem;
+    margin-right: 6px;
+  }
+  .numbers-item h3 {
+    font-size: 8px;
+    margin-bottom: 2px;
+  }
+  .numbers-item p {
+    font-size: 10px;
+  }
+  .numbers-item:first-child {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: yields;
+  }
+  .numbers-item:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: prep-time;
+  }
+  .numbers-item:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: cook-time;
+  }
+  .numbers-item:last-child {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: total-time;
+  }
+  .instruction {
+    border: 1px solid red;
+    gap: 10px;
+  }
+  .source {
+    font-size: 12px;
+  }
+}
